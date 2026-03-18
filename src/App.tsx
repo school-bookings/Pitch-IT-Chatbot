@@ -291,21 +291,26 @@ export default function App() {
 
         {/* Info Cards (Visible when no messages or as hints) */}
         {messages.length < 3 && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
             <div className="bg-white p-4 rounded-2xl border border-black/5 shadow-sm">
               <div className="text-[#5A5A40] mb-2"><Lightbulb size={20} /></div>
-              <h3 className="font-serif font-semibold text-sm mb-1">The Problem</h3>
-              <p className="text-xs text-black/60">What real-world pain point are you solving for people?</p>
+              <h3 className="font-serif font-semibold text-sm mb-1">Problem</h3>
+              <p className="text-xs text-black/60">What real-world problem are you solving?</p>
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-black/5 shadow-sm">
+              <div className="text-[#5A5A40] mb-2"><User size={20} /></div>
+              <h3 className="font-serif font-semibold text-sm mb-1">People</h3>
+              <p className="text-xs text-black/60">Who has this problem and who is involved?</p>
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-black/5 shadow-sm">
+              <div className="text-[#5A5A40] mb-2"><Bot size={20} /></div>
+              <h3 className="font-serif font-semibold text-sm mb-1">Product</h3>
+              <p className="text-xs text-black/60">What exactly is your solution or product?</p>
             </div>
             <div className="bg-white p-4 rounded-2xl border border-black/5 shadow-sm">
               <div className="text-[#5A5A40] mb-2"><TrendingUp size={20} /></div>
-              <h3 className="font-serif font-semibold text-sm mb-1">The Market</h3>
-              <p className="text-xs text-black/60">Who is your customer and why will they pay you?</p>
-            </div>
-            <div className="bg-white p-4 rounded-2xl border border-black/5 shadow-sm">
-              <div className="text-[#5A5A40] mb-2"><ShieldAlert size={20} /></div>
-              <h3 className="font-serif font-semibold text-sm mb-1">The Edge</h3>
-              <p className="text-xs text-black/60">What makes your solution better than what's out there?</p>
+              <h3 className="font-serif font-semibold text-sm mb-1">Potential</h3>
+              <p className="text-xs text-black/60">What future opportunities does this have?</p>
             </div>
           </div>
         )}
